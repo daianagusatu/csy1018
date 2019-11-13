@@ -1,0 +1,52 @@
+body, html{
+    margin: 0;
+}
+
+/*Styling the container where the top menu is placed*/
+nav{
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    height: 3em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    border-color:  rgb(148, 142, 142);
+    border-bottom: 0.1em solid rgb(189, 185, 185);
+}
+
+ul{
+    list-style-type: none;
+    overflow: auto;
+    display : flex;
+    padding: 0;
+    margin-bottom: .7em;
+    margin-top: 1em;
+}
+
+li{
+    margin: 0.2em, 0.3em, 0.2em, 0;
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-right: 0.1em solid rgb(148, 142, 142);
+}
+
+li a{
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: all 0.6s ease-in; /*When page is loading, text size of the text will increase*/
+    color: rgb(182, 174, 174);
+    align-self: center;
+    text-decoration: none;
+}
+
+/*Colour of the text will change when hovering over*/
+li a:hover{
+    color: rgb(223, 221, 126);
+}
+
+/*When selected, the menu title will have a different colour*/
+li.active a{
+    color:  rgb(0, 0, 0);
+}
