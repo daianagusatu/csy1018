@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin: 3em 0 0;
+    padding: .4em;
+}
+
+.photo{
+    filter: sepia(70%);
+}
